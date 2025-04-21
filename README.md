@@ -9,18 +9,36 @@ This simple todo list allows the user to:
 - See archived todos
 - Clear archived todos
 
-It uses local storage.
+This app uses local storage.
 
-This app is designed for software testing purposes.
+This app is designed for software testing purposes, ideally using Vitest and Playwright. The software testing dependencies are not included.
 
-To run the app:
+Install dependencies with:
 
 ```sh
 npm install
 ```
 
+Run the development server with:
+
 ```sh
-npm run dev
+npm run dev -- --open
 ```
 
-This app uses SvelteKit/Svelte 5, TailwindCSS, and HeroIcons.
+> The development server can be accessed at [localhost:5173/](http://localhost:5173/).
+
+To build the app, run:
+
+```sh
+npm run build
+```
+
+Preview your production build locally with:
+
+```sh
+npm run preview -- --open
+```
+
+> The local production build can be accessed at [localhost:4173/](http://localhost:4173/).
+
+This app uses Vite, SvelteKit/Svelte 5, TailwindCSS, and HeroIcons.
